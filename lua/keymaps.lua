@@ -45,4 +45,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Paragraph navigation
+vim.keymap.set({ 'n', 'v' }, 'ä', '}', { desc = 'Next Paragraph' })
+vim.keymap.set({ 'n', 'v' }, 'ö', '{', { desc = 'Previous Paragraph' })
 -- vim: ts=2 sts=2 sw=2 et
