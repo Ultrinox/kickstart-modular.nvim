@@ -1,11 +1,17 @@
 return {
   {
-    "catppuccin/nvim",
+    'catppuccin/nvim',
     lazy = false,
-    name = "catppuccin", 
+    name = 'catppuccin',
     priority = 1000,
     config = function()
-      vim.cmd([[colorscheme catppuccin]])
+      require('catppuccin').setup {
+        transparent_background = true,
+        styles = {
+          comments = { 'italic' }, -- Disable italics in comments
+        },
+      }
+      vim.cmd.colorscheme 'catppuccin-mocha'
     end,
-  }
+  },
 }
