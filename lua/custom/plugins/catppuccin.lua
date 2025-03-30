@@ -6,12 +6,12 @@ return {
     priority = 1000,
     config = function()
       require('catppuccin').setup {
-        transparent_background = true,
+        transparent_background = false,
         styles = {
-          comments = { 'italic' }, -- Disable italics in comments
+          comments = { 'nocombine' }, -- Disable italics in comments
         },
       }
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      -- vim.cmd.colorscheme 'catppuccin-mocha'
     end,
   },
 }
