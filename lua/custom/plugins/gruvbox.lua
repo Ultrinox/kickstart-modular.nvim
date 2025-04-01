@@ -14,8 +14,8 @@ return {
         transparent_mode = false,
         dim_inactive = false,
       }
-      vim.o.background = 'dark'
-      vim.cmd.colorscheme 'gruvbox'
+      --  vim.o.background = 'dark'
+      --  vim.cmd.colorscheme 'gruvbox'
     end,
   },
 }
